@@ -13,6 +13,23 @@
         <input type="date" id="quarantine-start" name="date">
     </form>
     <form><p> Select the one that best describes your living situation</p>
+        <select id="dropdown" name="living-sit" required>
+            <option disabled selected value>Select Best Match</option>
+            <option value="Alone">Alone</option>
+            <option value="Spouse">With Spouse or Partner Only</option>
+            <option value="Roommates">With Roommates</option>
+            <option value="Family">With Parents and/or Family</option>
+            <option value="Other">Other</option>
+        </select> 
+</form>
+<form>
+    <p>Do you have pets?</p>
+    <label for="yes">
+        <input id="yes" value="yes" type="radio" name="pets">Yes
+    </label>
+    <label for="no">
+        <input id="no" value="no" type="radio" name="pets">No
+    </label>
 </form>
     
 </body>
