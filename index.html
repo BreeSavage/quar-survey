@@ -8,11 +8,11 @@
 <body>
     <h1>Quarantine Survey Form</h1>
     <p><em>Understanding Your Quarantine Experience</em></p>
-    <form>
+    <form id="date"> 
         <label for="quarantine-start">Date you began quarantine/social distancing:</label>
         <input type="date" id="quarantine-start" name="date">
     </form>
-    <form><p> Select the one that best describes your living situation</p>
+    <form id="living-sit"><p> Select the one that best describes your living situation</p>
         <select id="dropdown" name="living-sit" required>
             <option disabled selected value>Select Best Match</option>
             <option value="Alone">Alone</option>
@@ -22,7 +22,7 @@
             <option value="Other">Other</option>
         </select> 
 </form>
-<form>
+<form id="pets">
     <p>Do you have pets?</p>
     <label for="yes">
         <input id="yes" value="yes" type="radio" name="pets">Yes
@@ -30,7 +30,8 @@
     <label for="no">
         <input id="no" value="no" type="radio" name="pets">No
     </label>
-
+</form>
+<form id="working">
     <p>Are you working?</p>
     <label for="yes">
         <input id="yes" value="yes" type="radio" name="pets">Yes
@@ -38,17 +39,20 @@
     <label for="no">
         <input id="no" value="no" type="radio" name="pets">No
     </label>
-
+</form>
+<form id="remote">
     <p>If you answered, 'yes', are you able to work remotely?</p>
     <label for="yes">
         <input id="yes" value="yes" type="radio" name="pets">Yes
     </label>
     <label for="no">
         <input id="no" value="no" type="radio" name="pets">No
+        <label for="NA">
+            <input id="NA" value="NA" type="radio" name="pets">N.A
     </label>
 </form>
 
-<form>
+<form id="free-time">
     <p>During your free time, select all the activities you have been enjoying:</p>
     <label for="netflix"><input id="netflix" type="checkbox" name="activities">Binging Netflix 
     </label><br>
@@ -82,7 +86,7 @@
     </label><br>
 </form>
 <div>
-    <form>
+    <form id="reaction">
         <fieldset>
             <legend>How ready are you for this to be over?</legend>
             <input id="chill" type="radio" name="reaction-level" value="chill">
@@ -94,6 +98,8 @@
         </fieldset>
     </form>
 </div>
+<input type="Submit" value="Submit">
+
 <h3><em>Thank you for taking the time to answer this survey. Stay sane, stay home!
 </em></h3>
 <img src="https://i2-prod.dailystar.co.uk/incoming/article21774382.ece/ALTERNATES/s615b/0_Coronavirus_Pets_masks_TRIANGLENEWS_1JPG.jpg" id="dog-pic" alt="Picture of a dog in a protective facemask.">
