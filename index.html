@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+       
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Quarantine Survey Form</title>
 </head>
 <body>
     <h1>Quarantine Survey Form</h1>
-    <p><em>Understanding Your Quarantine Experience</em></p>
-    <form id="date"> 
+    <p id="description"><em>Understanding Your Quarantine Experience</em></p>
+    <form id="name">
+        <p>Enter your name:</p>
+        <input type="text" placeholder="your name here">
+    </form>
+    <form id="email">
+        <p>Enter a valid e-mail address:</p>
+        <input type="text" placeholder="enter email">
+    </form>
+    <form id="survey-form"> 
         <label for="quarantine-start">Date you began quarantine/social distancing:</label>
         <input type="date" id="quarantine-start" name="date">
     </form>
@@ -34,55 +45,55 @@
 <form id="working">
     <p>Are you working?</p>
     <label for="yes">
-        <input id="yes" value="yes" type="radio" name="pets">Yes
+        <input id="yes" value="yes" type="radio" name="working">Yes
     </label>
     <label for="no">
-        <input id="no" value="no" type="radio" name="pets">No
+        <input id="no" value="no" type="radio" name="working">No
     </label>
 </form>
 <form id="remote">
     <p>If you answered, 'yes', are you able to work remotely?</p>
     <label for="yes">
-        <input id="yes" value="yes" type="radio" name="pets">Yes
+        <input id="yes" value="yes" type="radio" name="remote">Yes
     </label>
     <label for="no">
-        <input id="no" value="no" type="radio" name="pets">No
+        <input id="no" value="no" type="radio" name="remote">No
         <label for="NA">
-            <input id="NA" value="NA" type="radio" name="pets">N.A
+            <input id="NA" value="NA" type="radio" name="remote">N.A
     </label>
 </form>
 
 <form id="free-time">
     <p>During your free time, select all the activities you have been enjoying:</p>
-    <label for="netflix"><input id="netflix" type="checkbox" name="activities">Binging Netflix 
+    <label for="netflix"><input id="netflix" type="checkbox" value="netflix" name="activities">Binging Netflix 
     </label><br>
-    <label for="baking"><input id="baking" type="checkbox" name="activities">Baking and then eating all the baked goodies
+    <label for="baking"><input id="baking" type="checkbox" value="baking" name="activities">Baking and then eating all the baked goodies
     </label><br>
-    <label for="workout"><input id="workout" type="checkbox" name="activities">Live streaming workout classes
+    <label for="workout"><input id="workout" type="checkbox" value="workout" name="activities">Live streaming workout classes
     </label><br>
-    <label for="learning"><input id="learning" type="checkbox" name="activities">Online learning classes... like coding!
+    <label for="learning"><input id="learning" type="checkbox" value="learning" name="activities">Online learning classes... like coding!
     </label><br>
-    <label for="reading"><input id="reading" type="checkbox" name="activities">Reading actual books
+    <label for="reading"><input id="reading" type="checkbox" value="reading" name="activities">Reading actual books
     </label><br>
-    <label for="puzzles"><input id="puzzles" type="checkbox" name="activities">Doing puzzles and wondering what day it is
+    <label for="puzzles"><input id="puzzles" type="checkbox" value="puzzles" name="activities">Doing puzzles and wondering what day it is
     </label><br>
-    <label for="home-projects"><input id="home-projects" type="checkbox" name="activities">Home improvement projects you've been putting off for years
+    <label for="home-projects"><input id="home-projects" type="checkbox" value="home-projects" name="activities">Home improvement projects you've been putting off for years
     </label><br>
-    <label for="new-hobby"><input id="new-hobby" type="checkbox" name="activities">Learning a new hobby like sassy needleworking
+    <label for="new-hobby"><input id="new-hobby" type="checkbox" value="new-hobby" name="activities">Learning a new hobby like sassy needleworking
     </label><br>
-    <label for="cleaning"><input id="cleaning" type="checkbox" name="activities">Cleaning your entire kitchen every other day
+    <label for="cleaning"><input id="cleaning" type="checkbox" value="cleaning" name="activities">Cleaning your entire kitchen every other day
     </label><br>
-    <label for="video-chats"><input id="video-chats" type="checkbox" name="activities">Compulsively calling everyone you know on Zoom
+    <label for="video-chats"><input id="video-chats" type="checkbox" value="video-chats" name="activities">Compulsively calling everyone you know on Zoom
     </label><br>
-    <label for="drinking"><input id="drinking" type="checkbox" name="activities">Day Drinking
+    <label for="drinking"><input id="drinking" type="checkbox" value="drinking" name="activities">Day Drinking
     </label><br>
-    <label for="outside"><input id="outside" type="checkbox" name="activities">Taking walks/spending time outdoors evading the cops
+    <label for="outside"><input id="outside" type="checkbox" value="outside" name="activities">Taking walks/spending time outdoors evading the cops
     </label><br>
-    <label for="cooking"><input id="cooking" type="checkbox" name="activities">Broadcasting your cooking to Instagram
+    <label for="cooking"><input id="cooking" type="checkbox" value="cooking" name="activities">Broadcasting your cooking to Instagram
     </label><br>
-    <label for="tiktok"><input id="tiktok" type="checkbox" name="activities">Trying to become a TikTok star
+    <label for="tiktok"><input id="tiktok" type="checkbox" value="tiktok" name="activities">Trying to become a TikTok star
     </label><br>
-    <label for="baskin"><input id="baskin" type="checkbox" name="activities">Obsessing over Carol Baskin conspiracy theories
+    <label for="baskin"><input id="baskin" type="checkbox" value="baskin" name="activities">Obsessing over Carol Baskin conspiracy theories
     </label><br>
 </form>
 <div>
@@ -98,8 +109,11 @@
         </fieldset>
     </form>
 </div>
+//**
+<form>
 <input type="Submit" value="Submit">
-
+</form>
+//**
 <h3><em>Thank you for taking the time to answer this survey. Stay sane, stay home!
 </em></h3>
 <img src="https://i2-prod.dailystar.co.uk/incoming/article21774382.ece/ALTERNATES/s615b/0_Coronavirus_Pets_masks_TRIANGLENEWS_1JPG.jpg" id="dog-pic" alt="Picture of a dog in a protective facemask.">
