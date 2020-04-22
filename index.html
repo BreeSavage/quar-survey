@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
     <style>
-       
+     html {
+         font-size: 10px;
+     }  
+     body {
+        font-family: 'Baloo Bhaina 2', cursive, sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.5;
+         text-align: left;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +20,8 @@
 <body>
     <h1 id="title">Quarantine Survey Form</h1>
     <p id="description"><em>Understanding Your Quarantine Experience</em></p>
-    
-    <form id="name">
+    <form id="survey-form">
+    <div class="forms">
         <label id="name-label" 
         for="name">Enter your name:
     </label>
@@ -20,43 +29,48 @@
         type="text" 
         name="name" 
         id="name" 
-        placeholder="your name here">
-    </form>
+        placeholder="your name here"
+        required>
+</div>
 
-    <form id="email">
+    <div class="forms">
         <label id="email-label" 
         for="email">Enter a valid e-mail address:</label>
         <input 
         type="email" 
         name="email"
         id="email"
-        placeholder="abcd@email.com">
-    </form>
+        placeholder="abcd@email.com"
+        required>
+    </div>
 
-    <form id="number">
-        <label id="age" for="number">How old are you?</label>
+    <div class="forms">
+        <label id="number-label" for="number">How old are you?</label>
         <input
         type="number"
         name="age"
-        id="number">
-    </form>
+        id="number"
+        min="8"
+        max="110"
+        placeholder="age">
+    </div>
 
-    <form id="survey-form"> 
+    <div class="forms"> 
         <label for="date">Date you began quarantine/social distancing:</label>
         <input 
         type="date" 
         id="date" 
         name="date">
-    </form>
+    </div>
 
-    <form id="living-sit">
+    <div class="forms">
         <label 
-        id="living-sit" 
+        id="dropdown" 
         for="dropdown">Select the one that best describes your living situation
     </label>
         <select 
         id="dropdown" 
-        name="living-sit" 
+        name="dropdown" 
         required>
             <option disabled selected value>Select Best Match</option>
             <option value="Alone">Alone</option>
@@ -65,9 +79,9 @@
             <option value="Family">With Parents and/or Family</option>
             <option value="Other">Other</option>
         </select> 
-</form>
+    </div>
 
-<form id="pets">
+<div class="forms">
     <p>Do you have pets?</p>
     <label for="yes">
         <input id="yes" value="yes" type="radio" name="pets">Yes
@@ -75,9 +89,9 @@
     <label for="no">
         <input id="no" value="no" type="radio" name="pets">No
     </label>
-</form>
+</div>
 
-<form id="working">
+<div class="forms">
     <p>Are you working?</p>
     <label for="yes">
         <input id="yes" value="yes" type="radio" name="working">Yes
@@ -85,9 +99,9 @@
     <label for="no">
         <input id="no" value="no" type="radio" name="working">No
     </label>
-</form>
+</div>
 
-<form id="remote">
+<div class="forms">
     <p>If you answered, 'yes', are you able to work remotely?</p>
     <label for="yes">
         <input id="yes" value="yes" type="radio" name="remote">Yes
@@ -97,9 +111,9 @@
         <label for="NA">
             <input id="NA" value="NA" type="radio" name="remote">N.A
     </label>
-</form>
+</div>
 
-<form id="free-time">
+<div class="forms">
     <p>During your free time, select all the activities you have been enjoying:</p>
     <label for="netflix"><input id="netflix" type="checkbox" value="netflix" name="activities">Binging Netflix 
     </label><br>
@@ -131,10 +145,9 @@
     </label><br>
     <label for="baskin"><input id="baskin" type="checkbox" value="baskin" name="activities">Obsessing over Carol Baskin conspiracy theories
     </label><br>
-</form>
+</div>
 
-<div>
-    <form id="reaction">
+<div class="forms">
         <fieldset>
             <legend>How ready are you for this to be over?</legend>
             <input id="chill" type="radio" name="reaction-level" value="chill">
@@ -144,19 +157,26 @@
             <input id="recluse" type="radio" name="reaction-level" value="recluse">
             <label for="recluse">Go away. I don't need society anymore</label><br>
         </fieldset>
-    </form>
 </div>
 
-//**
-<form>
-<input type="Submit" value="Submit">
+<div class="forms">
+    <p>Additional space to vent/rant:</p>
+    <textarea
+    id="comments"
+    name="comments">
+    </textarea>
+</div>
+
+<div class="forms">
+<button type="submit" id="submit" class="submit-button">Submit
+    </button>
+    </div>
 </form>
-//**
+
 <h3><em>Thank you for taking the time to answer this survey. Stay sane, stay home!
 </em></h3>
 <img src="https://i2-prod.dailystar.co.uk/incoming/article21774382.ece/ALTERNATES/s615b/0_Coronavirus_Pets_masks_TRIANGLENEWS_1JPG.jpg" id="dog-pic" alt="Picture of a dog in a protective facemask.">
 <p>(Image: Daily Star, instagrammthebest Instagram)</p>
 </body>
 
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
