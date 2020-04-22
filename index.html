@@ -6,25 +6,58 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Quarantine Survey Form</title>
+    <title>Quarantine Survey Form</title>
 </head>
 <body>
-    <h1>Quarantine Survey Form</h1>
+    <h1 id="title">Quarantine Survey Form</h1>
     <p id="description"><em>Understanding Your Quarantine Experience</em></p>
+    
     <form id="name">
-        <p>Enter your name:</p>
-        <input type="text" placeholder="your name here">
+        <label id="name-label" 
+        for="name">Enter your name:
+    </label>
+        <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="your name here">
     </form>
+
     <form id="email">
-        <p>Enter a valid e-mail address:</p>
-        <input type="text" placeholder="enter email">
+        <label id="email-label" 
+        for="email">Enter a valid e-mail address:</label>
+        <input 
+        type="email" 
+        name="email"
+        id="email"
+        placeholder="abcd@email.com">
     </form>
+
+    <form id="number">
+        <label id="age" for="number">How old are you?</label>
+        <input
+        type="number"
+        name="age"
+        id="number">
+    </form>
+
     <form id="survey-form"> 
-        <label for="quarantine-start">Date you began quarantine/social distancing:</label>
-        <input type="date" id="quarantine-start" name="date">
+        <label for="date">Date you began quarantine/social distancing:</label>
+        <input 
+        type="date" 
+        id="date" 
+        name="date">
     </form>
-    <form id="living-sit"><p> Select the one that best describes your living situation</p>
-        <select id="dropdown" name="living-sit" required>
+
+    <form id="living-sit">
+        <label 
+        id="living-sit" 
+        for="dropdown">Select the one that best describes your living situation
+    </label>
+        <select 
+        id="dropdown" 
+        name="living-sit" 
+        required>
             <option disabled selected value>Select Best Match</option>
             <option value="Alone">Alone</option>
             <option value="Spouse">With Spouse or Partner Only</option>
@@ -33,6 +66,7 @@
             <option value="Other">Other</option>
         </select> 
 </form>
+
 <form id="pets">
     <p>Do you have pets?</p>
     <label for="yes">
@@ -42,6 +76,7 @@
         <input id="no" value="no" type="radio" name="pets">No
     </label>
 </form>
+
 <form id="working">
     <p>Are you working?</p>
     <label for="yes">
@@ -51,6 +86,7 @@
         <input id="no" value="no" type="radio" name="working">No
     </label>
 </form>
+
 <form id="remote">
     <p>If you answered, 'yes', are you able to work remotely?</p>
     <label for="yes">
@@ -96,6 +132,7 @@
     <label for="baskin"><input id="baskin" type="checkbox" value="baskin" name="activities">Obsessing over Carol Baskin conspiracy theories
     </label><br>
 </form>
+
 <div>
     <form id="reaction">
         <fieldset>
@@ -109,6 +146,7 @@
         </fieldset>
     </form>
 </div>
+
 //**
 <form>
 <input type="Submit" value="Submit">
