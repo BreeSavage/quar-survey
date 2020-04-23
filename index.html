@@ -5,13 +5,35 @@
     <style>
      html {
          font-size: 10px;
+         background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
      }  
+
      body {
         font-family: 'Baloo Bhaina 2', cursive, sans-serif;
         font-size: 1.6rem;
-        line-height: 1.5;
+        line-height: 1.8;
          text-align: left;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #comments {
+            min-height: 150px;
+            width: 50%;
+            resize: vertical;
+        }
+       
+       #submit {
+           display: block;
+            width: 20%;
+            background-color:cornflowerblue;
+            font-size: 1.6rem;
+            font-weight: bold;
+       }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,7 +135,7 @@
     </label>
 </div>
 
-<div class="forms">
+<div id="checkbox" class="forms">
     <p>During your free time, select all the activities you have been enjoying:</p>
     <label for="netflix"><input id="netflix" type="checkbox" value="netflix" name="activities">Binging Netflix 
     </label><br>
@@ -144,8 +166,8 @@
     <label for="tiktok"><input id="tiktok" type="checkbox" value="tiktok" name="activities">Trying to become a TikTok star
     </label><br>
     <label for="baskin"><input id="baskin" type="checkbox" value="baskin" name="activities">Obsessing over Carol Baskin conspiracy theories
-    </label><br>
-</div>
+    </label>
+</div><br>
 
 <div class="forms">
         <fieldset>
