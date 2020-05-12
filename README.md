@@ -1,0 +1,1 @@
+This is a basic webpage built to practice HTML CSS and JS. Learning with Odin Project & Free Code camp alongside other resources. This webpage will be a survey 
